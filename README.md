@@ -48,7 +48,35 @@ Memcached
 
 ### Решение:
 
-1 Установить memcached: sudo apt install -y memcached
+1 Установить memcached: (sudo apt install -y memcached)[img/01.png]
+
+```
+sudo apt install -y memcached
+Следующие пакеты устанавливались автоматически и больше не требуются:
+  libdrm-radeon1:i386  libgl1-amber-dri  libglapi-amber  libllvm19:i386  libuuid1:i386  libwayland-server0:i386  libxcb-dri2-0:i386  lp-solve  postgresql-common-dev
+Для их удаления используйте «sudo apt autoremove».
+
+К установке:
+  memcached
+
+Предлагаемые пакеты:
+  libanyevent-perl  libcache-memcached-perl  libmemcached  libyaml-perl
+
+Сводка:
+  К обновлению: 0, К установке: 1 К удалению: 0, Не обновляется: 0
+  Размер загрузки: 213 kB
+  Места необходимо: 605 kB / 3 746 MB доступно
+
+Пол:1 http://archive.ubuntu.com/ubuntu noble/main amd64 memcached amd64 1.6.24-1build3 [213 kB]
+Получено 213 kB за 2с (103 kB/s)          
+Выбор ранее не выбранного пакета memcached.
+(Чтение базы данных … на данный момент установлено 470893 файла и каталога.)
+Подготовка к распаковке …/memcached_1.6.24-1build3_amd64.deb …
+Распаковывается memcached (1.6.24-1build3) …
+Настраивается пакет memcached (1.6.24-1build3) …
+Created symlink '/etc/systemd/system/multi-user.target.wants/memcached.service' → '/usr/lib/systemd/system/memcached.service'.
+Обрабатываются триггеры для man-db (2.12.1-3) …
+```
 
 2 Включить автозапуск и запустить сервис: sudo systemctl enable --now memcached
 
