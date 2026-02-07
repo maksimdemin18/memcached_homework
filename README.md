@@ -119,7 +119,7 @@ systemctl status memcached --no-pager
 
 1 Memcached текстовый протокол:
 
-set <key> <flags> <exptime> <bytes>
+```set <key> <flags> <exptime> <bytes>```
 
 [printf "set key1 0 5 5\r\nhello\r\nset key2 0 5 5\r\nworld\r\nget key1\r\nget key2\r\nquit\r\n" | nc 127.0.0.1 11211](img/04.png)
 
